@@ -120,3 +120,4 @@ To deploy your own version:
 This portfolio was designed and developed by Almaas Labbai.
 
 The source code is shared for demonstration purposes only. Copying, modifying, or redistributing this project without permission is not permitted.
+
