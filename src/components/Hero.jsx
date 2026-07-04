@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './Hero.css'
+import face from '../assets/FACE1.jpg'
 
 const roles = [
   'Data Science Engineer',
@@ -112,7 +113,7 @@ export default function Hero() {
             <div className="photo-ring ring-outer" />
             <div className="photo-ring ring-inner" />
             <img
-              src="/src/assets/FACE1.jpg"
+              src={face}
               alt="Almaas Labbai"
               className="hero-photo"
             />
