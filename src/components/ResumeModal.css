@@ -19,10 +19,13 @@
 .modal-box {
   background: #1a0d10;
   border: 1px solid var(--border2);
-  border-radius: 20px;
-  padding: 40px;
-  max-width: 520px;
-  width: 80%;
+  border-radius: 18px;
+
+  width: min(92%, 500px);   /* pehle 520px tha */
+  max-height: 80vh;         /* screen ke andar hi rahega */
+  overflow-y: auto;         /* agar content zyada hua to modal ke andar scroll */
+
+  padding: 24px;
   position: relative;
   animation: modal-in 0.25s ease;
 }
@@ -54,11 +57,12 @@
 }
 
 .modal-title {
-  font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 8px;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.modal-sub {
+  margin-bottom: 18px;
 }
 
 .modal-sub {
@@ -68,14 +72,17 @@
   font-weight: 300;
 }
 
-.resume-options { display: grid; gap: 12px; }
+.resume-options {
+  display: grid;
+  gap: 10px;
+}
 
 .resume-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 18px 20px;
+  gap: 14px;
+  padding: 14px 16px;   /* pehle 18px 20px */
 }
 
 .resume-card-left {
@@ -101,15 +108,8 @@
 }
 
 .resume-dl-btn {
-  background: var(--gold);
-  color: var(--bg);
-  font-size: 12px;
-  font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 100px;
-  white-space: nowrap;
-  transition: background 0.2s, transform 0.2s;
-  flex-shrink: 0;
+  padding: 7px 14px;
+  font-size: 11px;
 }
 
 .resume-dl-btn:hover {
