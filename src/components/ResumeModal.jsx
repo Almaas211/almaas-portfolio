@@ -4,20 +4,26 @@ const resumes = [
   {
     icon: '🤖',
     title: 'AI / Machine Learning Resume',
-    desc: 'Best for ML Engineer, AI Engineer, Data Scientist',
+    desc: 'Best for: ML Engineer, AI Engineer, Data Scientist',
     file: '/resumes/Data Analytics_AIML Resume.pdf',
   },
   {
     icon: '📊',
     title: 'Data Analytics Resume',
-    desc: 'Best for Data Analyst, BI Analyst',
+    desc: 'Best for: Data Analyst, BI Analyst, Business Intelligence Analyst',
     file: '/resumes/Data Analytics_AIML Resume.pdf',
   },
   {
-    icon: '💻',
-    title: 'Python / Software Resume',
-    desc: 'Best for Python Developer, Software Engineer',
+    icon: '🌐',
+    title: 'Frontend Developer | Web Developer',
+    desc: 'Best for:Frontend Developer, Web Developer, Software Developer',
     file: '/resumes/Web_Frontend Developer Resume.pdf',
+  },
+  {
+    icon: '🐍',
+    title: 'Python Developer | Software Developer',
+    desc: 'Best for:Python Developer, Software Engineer, Backend Developer',
+    file: null, // Coming soon
   },
 ]
 
