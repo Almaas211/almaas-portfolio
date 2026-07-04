@@ -17,7 +17,7 @@ const resumes = [
     icon: '🌐',
     title: 'Frontend Developer | Web Developer',
     desc: 'Best for:Frontend Developer, Web Developer, Software Developer',
-    file: '/resumes/Web_Frontend Developer Resume.pdf',
+    file: '/resumes/Web_Frontend_Developer_Resume.pdf',
   },
   {
     icon: '🐍',
