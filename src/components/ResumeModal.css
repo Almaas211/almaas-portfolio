@@ -16,13 +16,23 @@
   to   { opacity: 1; }
 }
 
-.modal-box{
-    width:420px;
-    max-width:90%;
-    max-height:78vh;
-    overflow-y:auto;
-    padding:22px;
-    border-radius:18px;
+.modal-box {
+  background: #1a0d10;
+  border: 1px solid var(--border2);
+  border-radius: 18px;
+
+  width: min(92%, 500px);   /* pehle 520px tha */
+  max-height: 80vh;         /* screen ke andar hi rahega */
+  overflow-y: auto;         /* agar content zyada hua to modal ke andar scroll */
+
+  padding: 24px;
+  position: relative;
+  animation: modal-in 0.25s ease;
+}
+
+.modal-close:hover {
+  color: var(--text);
+  background: rgba(255,255,255,0.08);
 }
 
 @keyframes modal-in {
