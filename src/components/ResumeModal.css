@@ -22,7 +22,7 @@
   border-radius: 20px;
   padding: 40px;
   max-width: 520px;
-  width: 100%;
+  width: 80%;
   position: relative;
   animation: modal-in 0.25s ease;
 }
