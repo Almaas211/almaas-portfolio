@@ -17,7 +17,7 @@ const resumes = [
     icon: '💻',
     title: 'Python / Software Resume',
     desc: 'Best for Python Developer, Software Engineer',
-    file: null,
+    file: '/resumes/Web_Frontend Developer Resume.pdf',
   },
 ]
 
