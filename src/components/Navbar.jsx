@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './Navbar.css'
 
 const links = [
@@ -9,18 +10,30 @@ const links = [
 ]
 
 export default function Navbar({ activeSection, onResumeClick }) {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   const scrollTo = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+    setMenuOpen(false)
   }
 
   return (
     <header className="navbar">
       <div className="container nav-inner">
+
         <div className="nav-logo" onClick={() => scrollTo('hero')}>
           AL
         </div>
-        <nav className="nav-links">
-          {links.map(l => (
+
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
+        <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          {links.map((l) => (
             <button
               key={l.id}
               className={'nav-btn' + (activeSection === l.id ? ' active' : '')}
@@ -29,18 +42,28 @@ export default function Navbar({ activeSection, onResumeClick }) {
               {l.label}
             </button>
           ))}
-          <button className="nav-resume" onClick={onResumeClick}>
+
+          <button
+            className="nav-resume"
+            onClick={() => {
+              onResumeClick()
+              setMenuOpen(false)
+            }}
+          >
             Resume
           </button>
+
           <a
             className="nav-cta"
             href="https://github.com/Almaas211"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
           >
             GitHub
           </a>
         </nav>
+
       </div>
     </header>
   )
